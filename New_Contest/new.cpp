@@ -6,7 +6,7 @@ int main()
     
     
 
-    cout << "yes";
+    cout << "Yes";
     
     return 0;
 }
