@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void printVec(vector<pair<int,int>> &v) {
+    cout << "Size of Vec : " << v.size() << endl;
+    for(int i = 0; i < v.size(); i++) {
+        cout << v[i].first << " " << v[i].second << endl;
+    }
+    cout << endl;
+}
+
+int main() {
+
+    // vector<pair<int,int>> v = {{1,2},{2,3},{4,5}};
+    // printVec(v);
+
+    // How Take input Of in Pair vector
+
+    vector<pair<int,int>> v;
+
+    int n;
+    cin >> n;
+    for(int i = 0; i < n; i++) {
+        int x,y;
+        cin >> x >> y;
+        v.push_back({x,y});
+        // Also Write Like Below Code 
+        // v.push_back(make_pair(x,y));
+    }
+
+    printVec(v);
+
+    // Give Input Like this ->
+    // 3
+    // 1 2
+    // 2 3
+    // 4 5
+
+
+    return 0;
+}
